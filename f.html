@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+
+    <style>
+        .box
+        {
+            width:600px;
+            height:400px;
+            position:absolute;
+            top:20%;
+            left:25%;
+            background-color:rgb(245, 243, 243);
+            border-radius: 20px;
+        }
+        h2
+        {
+            text-align: center;
+        }
+        label
+        {
+            margin:50px;
+            
+        }
+        input[type="text"],input[type="email"],input[type="number"]
+        {
+            width:80%;
+            height:20px;
+            margin-left:50px;
+            margin-top:10px;
+            margin-bottom:8px;
+        }
+        input[type="submit"]
+        {
+            padding:10px;
+            color:white;
+            background-color: green;
+            border:none;
+            width:85%;
+            font-weight:bold;
+            margin-left:40px;
+            margin-top:10px;
+        }
+            @media(max-width:468px)
+            {
+                .box
+                {
+                    left: 8%;
+                    top: 15%;
+                    width: 400px;
+                }
+                input[type="text"],input[type="email"],input[type="number"]
+                {
+                    margin-left:40px;
+                }
+                label
+                {
+                    margin:40px;
+                }
+            }
+    </style>
+</head>
+<body>
+    <!-- <div> -->
+        <form>
+            <div class="box">
+                <h2>Checkout Form</h2>
+                <label>Full name</label><br>
+                <input type="text" name="name" id="name" required>
+    
+                <label>Email</label><br>
+                <input type="email" name="email" id="email" required>
+    
+                <label>Mobile</label><br>
+                <input type="number" name="number" id="numner" required>
+    
+                <label>Address</label><br>
+                <input type="text" name="address" id="address" required>
+    
+                <input type="submit" name="submit" value="Pay Now"><br>
+            </div>
+    
+        </form>
+    <!-- </div> -->
+</body>
+</html>
