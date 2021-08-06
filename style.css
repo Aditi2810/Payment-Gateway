@@ -43,7 +43,7 @@ html
 .design
 {
     width:100%;
-    background-image: url("images/mountains.jpg"); 
+    background-image: url("mountains.jpg"); 
     background-size:cover;
     height:100vh;
     position:relative;
